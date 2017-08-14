@@ -87,7 +87,7 @@ app.patch('/todos/:id', (req, res) => {
   }).catch((e) => {
     return res.status(400).send();
   })
-})
+});
 
 app.post('/users', (req, res) => {
   var body = _.pick(req.body, ['email', 'password']);
